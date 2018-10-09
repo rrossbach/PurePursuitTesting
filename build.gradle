@@ -5,6 +5,18 @@ plugins {
 
 def ROBOT_MAIN_CLASS = "###ROBOTCLASSREPLACE###"
 
+dependencies {
+   compile 'openrio.mirror.third.ctre:CTRE-phoenix-java:5.3.1.0'
+   compile 'openrio.mirror.third.kauailabs:navx-java:3.0.348'
+   nativeZip 'openrio.mirror.third.ctre:CTRE-phoenix-java:5.3.1.0:native@zip'
+}
+
+repositories {
+   maven {
+   	url "https://raw.githubusercontent.com/Open-RIO/Maven-Mirror/master/m2"
+   }
+}
+
 // Define my targets (RoboRIO) and artifacts (deployable files)
 // This is added by GradleRIO's backing project EmbeddedTools.
 deploy {
