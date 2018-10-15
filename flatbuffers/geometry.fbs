@@ -1,0 +1,15 @@
+namespace org.sch.vulcanrobotics.geometry;
+
+/// Pose2d is a translation and a rotation
+///    - translation is aribitrary units;  rotation is in radians
+table Pose2d {
+   x:double;
+   y:double;
+   cosTheta:double;
+   sinTheta:double;
+}
+
+table Pose2dWithCurvature {
+   pose:Pose2d;
+   curvature:double;
+}
