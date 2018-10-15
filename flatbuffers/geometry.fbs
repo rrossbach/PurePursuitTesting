@@ -10,7 +10,7 @@ table Pose2d_fb {
 }
 
 table Pose2dWithCurvature_fb {
-   pose:Pose2d;
+   pose:Pose2d_fb;
    curvature:double;
 }
 

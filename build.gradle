@@ -8,6 +8,7 @@ def ROBOT_MAIN_CLASS = "###ROBOTCLASSREPLACE###"
 dependencies {
    compile 'openrio.mirror.third.ctre:CTRE-phoenix-java:5.3.1.0'
    compile 'openrio.mirror.third.kauailabs:navx-java:3.0.348'
+   compile 'com.google.flatbuffers:flatbuffers-java:1.10.0'
    nativeZip 'openrio.mirror.third.ctre:CTRE-phoenix-java:5.3.1.0:native@zip'
 }
 
